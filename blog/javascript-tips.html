@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mastering JavaScript: Tips and Tricks - Blog Post">
+    <title>Mastering JavaScript: Tips and Tricks - Yuzonglinsam</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 100px auto 0;
+            padding: 2rem;
+        }
+        .blog-post-header {
+            margin-bottom: 2rem;
+        }
+        .blog-post-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+        .blog-post-meta {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+        .blog-post-content {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        .blog-post-content h2 {
+            color: var(--text-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-content code {
+            background-color: var(--bg-secondary);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            font-family: 'Courier New', monospace;
+        }
+        .blog-post-content pre {
+            background-color: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-content pre code {
+            padding: 0;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Yuzonglinsam</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#blog">Blog</a></li>
+                <li><button id="theme-toggle" aria-label="Toggle theme">🌓</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="blog-post">
+        <a href="../index.html#blog" class="back-link">← Back to Blog</a>
+        
+        <header class="blog-post-header">
+            <h1 class="blog-post-title">Mastering JavaScript: Tips and Tricks</h1>
+            <div class="blog-post-meta">
+                <time datetime="2026-01-10">January 10, 2026</time> • 7 min read
+            </div>
+        </header>
+
+        <div class="blog-post-content">
+            <p>
+                JavaScript is a versatile and powerful language that continues to evolve with each new 
+                ECMAScript specification. Whether you're a beginner or an experienced developer, there's 
+                always something new to learn. Let's explore some tips and tricks that will help you 
+                write better JavaScript code.
+            </p>
+
+            <h2>Destructuring for Cleaner Code</h2>
+            <p>
+                Destructuring allows you to extract values from arrays or properties from objects in a 
+                concise way:
+            </p>
+            <pre><code>// Object destructuring
+const { name, age, city } = user;
+
+// Array destructuring
+const [first, second, ...rest] = numbers;
+
+// Function parameters
+function greet({ name, age }) {
+  console.log(`Hello ${name}, you are ${age}`);
+}</code></pre>
+
+            <h2>Spread and Rest Operators</h2>
+            <p>
+                The spread operator (<code>...</code>) is incredibly useful for working with arrays and 
+                objects:
+            </p>
+            <pre><code>// Combining arrays
+const combined = [...array1, ...array2];
+
+// Copying objects
+const copy = { ...original, newProp: 'value' };
+
+// Rest parameters
+function sum(...numbers) {
+  return numbers.reduce((a, b) => a + b, 0);
+}</code></pre>
+
+            <h2>Optional Chaining and Nullish Coalescing</h2>
+            <p>
+                These modern features help you write safer code when dealing with potentially null or 
+                undefined values:
+            </p>
+            <pre><code>// Optional chaining
+const userName = user?.profile?.name;
+
+// Nullish coalescing
+const value = userInput ?? 'default value';</code></pre>
+
+            <h2>Array Methods for Functional Programming</h2>
+            <p>
+                JavaScript's array methods enable a functional programming style that's often more 
+                readable and maintainable:
+            </p>
+            <pre><code>// Map, filter, reduce
+const doubled = numbers.map(n => n * 2);
+const evens = numbers.filter(n => n % 2 === 0);
+const sum = numbers.reduce((acc, n) => acc + n, 0);
+
+// Find and some/every
+const found = users.find(u => u.id === targetId);
+const hasAdults = users.some(u => u.age >= 18);
+const allAdults = users.every(u => u.age >= 18);</code></pre>
+
+            <h2>Async/Await for Better Asynchronous Code</h2>
+            <p>
+                Modern async/await syntax makes asynchronous code more readable than traditional 
+                promise chains:
+            </p>
+            <pre><code>async function fetchUserData(userId) {
+  try {
+    const response = await fetch(`/api/users/${userId}`);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching user:', error);
+    throw error;
+  }
+}</code></pre>
+
+            <h2>Template Literals for String Manipulation</h2>
+            <p>
+                Template literals provide a more elegant way to work with strings:
+            </p>
+            <pre><code>// Multi-line strings
+const message = `
+  Hello ${name},
+  Welcome to our platform!
+`;
+
+// Tagged templates
+const styled = css`
+  color: ${primaryColor};
+  font-size: ${fontSize}px;
+`;</code></pre>
+
+            <h2>Performance Tips</h2>
+            <p>
+                Keep these performance considerations in mind:
+            </p>
+            <ul>
+                <li>Use <code>const</code> and <code>let</code> instead of <code>var</code></li>
+                <li>Avoid unnecessary DOM manipulation</li>
+                <li>Debounce and throttle event handlers</li>
+                <li>Use memoization for expensive calculations</li>
+                <li>Lazy load modules and components</li>
+            </ul>
+
+            <h2>Conclusion</h2>
+            <p>
+                JavaScript is a rich language with many features that can help you write cleaner, more 
+                efficient code. The key is to understand when and how to use each feature appropriately. 
+                Keep practicing, stay curious, and always be open to learning new patterns and techniques.
+            </p>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yuzonglinsam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
