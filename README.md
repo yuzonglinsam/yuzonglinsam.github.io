@@ -1,4 +1,4 @@
-# Samuel Yu — personal site
+# Sam (Zonglin) Yu — personal site
 
 This repository serves the homepage at [yuzonglinsam.github.io](https://yuzonglinsam.github.io/) from the root of `main` through GitHub Pages.
 
