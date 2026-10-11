@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Samuel Yu monogram">
+  <rect width="64" height="64" rx="15" fill="#142e31"/>
+  <path d="M14 20h24v6H21v6h14c8 0 13 4 13 11s-5 11-14 11H14v-6h20c5 0 8-2 8-5s-3-5-8-5H14V20Z" fill="#f5f3ed"/>
+  <path d="M40 12h7l-9 14h-7l9-14Z" fill="#c6e177"/>
+</svg>
