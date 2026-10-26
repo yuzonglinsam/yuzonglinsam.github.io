@@ -3,109 +3,129 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ed">
-  <meta name="description" content="Sam (Zonglin) Yu studies Accounting and Data Analytics at HKU and builds tools for traceable financial research.">
+  <meta name="theme-color" content="#f2f4f7">
+  <meta name="description" content="Sam (Zonglin) Yu studies Accounting and Data Analytics at HKU and builds finance tools that run in seconds and show their working.">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sam (Zonglin) Yu — Finance, data & thoughtful software">
-  <meta property="og:description" content="Projects and ideas at the intersection of financial research, data and software.">
+  <meta property="og:title" content="Sam Yu 余宗霖 | Finance tools that show their working">
+  <meta property="og:description" content="HKU Accounting and Data Analytics student. Automation, SEC data and checked AI analysis.">
   <meta property="og:url" content="https://yuzonglinsam.github.io/">
-  <title>Sam (Zonglin) Yu — Finance, data & thoughtful software</title>
+  <title>Sam Yu 余宗霖 | Finance tools that show their working</title>
   <link rel="icon" href="/img/portfolio-mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/portfolio.css?v=20261012">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+  <link rel="stylesheet" href="/css/portfolio.css?v=20261026">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Sam (Zonglin) Yu, back to top">
-        <span class="brand-symbol" aria-hidden="true">S<span>Y</span></span>
-        <span class="brand-name">Sam (Zonglin) Yu <span>余宗霖</span></span>
-      </a>
-      <nav class="site-nav" aria-label="Main navigation">
-        <a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a>
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">Sam Yu <span lang="zh-Hant">余宗霖</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#background">Background</a>
+        <a href="#contact">Contact</a>
       </nav>
-      <a class="header-link" href="https://github.com/yuzonglinsam" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> FINANCE · DATA · SOFTWARE</p>
-          <h1 id="hero-title">Make the<br> evidence <em>visible.</em></h1>
-          <p class="hero-intro">I'm Sam (Zonglin) Yu, an Accounting and Data Analytics student at HKU. I build tools that help people follow financial analysis back to its sources.</p>
-          <p class="hero-intro-zh" lang="zh-Hant">余宗霖 · 讓數據與判斷有據可循。</p>
-          <p class="hero-availability"><span aria-hidden="true"></span>Seeking a 2027 summer internship in Hong Kong.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a>
-            <a class="text-link" href="#about">A little about me <span aria-hidden="true">↓</span></a>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="art-grid"></div><div class="art-orbit art-orbit-outer"></div><div class="art-orbit art-orbit-inner"></div>
-          <div class="art-core"><span>SY</span><small>LOOK CLOSER</small></div>
-          <div class="art-chip art-chip-one"><span class="chip-dot"></span> Source</div>
-          <div class="art-chip art-chip-two"><span class="chip-dot"></span> Method</div>
-          <div class="art-chip art-chip-three"><span class="chip-dot"></span> Insight</div>
-          <div class="art-corner art-corner-top"></div><div class="art-corner art-corner-bottom"></div>
-        </div>
-      </div>
-      <div class="container hero-bottom"><span>Independent projects, clearly explained.</span><span>Scroll to explore ↓</span></div>
+    <section class="hero wrap" id="top" aria-labelledby="hero-title">
+      <h1 id="hero-title">I turn slow finance work into systems that run in seconds, and show their working.</h1>
+      <p class="hero-lede">I'm an Accounting and Data Analytics student at HKU. I'm looking for 2027 internships in data and AI, business transformation and consulting.</p>
+
+      <ul class="ticks" aria-label="Checked claims">
+        <li>
+          <svg class="tick" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13 L11 21 L27 3"/></svg>
+          <span class="claim">Cut a recurring audit reporting process at BDO from about 60 hours to 5, using Python.</span>
+          <span class="ref">BDO China</span>
+        </li>
+        <li>
+          <svg class="tick" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13 L11 21 L27 3"/></svg>
+          <span class="claim">Built Tickmark, which ties every figure in an AI-written credit memo back to its SEC filing.</span>
+          <span class="ref"><a href="#work">Tickmark</a></span>
+        </li>
+        <li>
+          <svg class="tick" viewBox="0 0 30 24" aria-hidden="true"><path d="M3 13 L11 21 L27 3"/></svg>
+          <span class="claim">Prepared SEC EDGAR filings as structured data for M&amp;A research.</span>
+          <span class="ref">HKU Business School</span>
+        </li>
+      </ul>
     </section>
 
-    <section class="section work-section" id="work" aria-labelledby="work-title">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-index">01 / SELECTED WORK</p>
-          <h2 id="work-title">Built to be <em>examined.</em></h2>
-          <p>A small collection of work where the process matters as much as the output.</p>
-        </div>
-        <article class="project-card">
-          <div class="project-copy">
-            <div class="project-topline"><span class="project-number">01</span><span>PUBLIC PROJECT · 2026</span></div>
-            <div>
-              <p class="project-category">CREDIT RESEARCH / FINANCIAL DATA</p>
-              <h3>Tickmark<span class="title-period">.</span></h3>
-              <p class="project-description">A credit research workspace built around SEC filings. It brings financial measures, source references and analysis into one place so readers can inspect the reasoning behind a conclusion.</p>
-            </div>
-            <div class="project-links">
-              <a href="https://tickmark-gules.vercel.app" target="_blank" rel="noopener noreferrer">Open project <span aria-hidden="true">↗</span></a>
-              <a href="https://github.com/yuzonglinsam/tickmark" target="_blank" rel="noopener noreferrer">View source <span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-          <div class="project-visual" aria-label="Illustration of a traceable research workflow">
-            <div class="visual-header"><span class="visual-mark">T<span>·</span></span><span>RESEARCH, WITH RECEIPTS</span><span class="visual-menu">•••</span></div>
-            <div class="visual-body">
-              <div class="visual-label">FROM EVIDENCE TO VIEW</div>
-              <div class="visual-row"><span class="visual-row-index">01</span><span>SEC filings</span><span class="visual-row-line"></span><span class="visual-row-icon">↗</span></div>
-              <div class="visual-row"><span class="visual-row-index">02</span><span>Financial measures</span><span class="visual-row-line"></span><span class="visual-row-icon">↗</span></div>
-              <div class="visual-row"><span class="visual-row-index">03</span><span>Cited analysis</span><span class="visual-row-line"></span><span class="visual-row-icon">↗</span></div>
-              <div class="visual-footer"><span class="visual-footer-dot"></span> SOURCE → METHOD → INSIGHT</div>
-            </div>
-          </div>
-        </article>
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="work-copy">
+        <h2 id="work-title">Tickmark</h2>
+        <p class="work-kind">A credit research workspace covering about 500 listed companies, built on SEC filings.</p>
+        <p>Each company page puts financial measures, stress tests and an AI-written credit memo side by side. Every figure links to the filing it came from. A memo sentence that disagrees with the numbers is checked, withheld, and shown next to the comparison that caught it.</p>
+        <p>Missing data stays marked as missing instead of turning into zero, and the memo text itself carries no numbers: those come from the tables.</p>
+        <p class="links">
+          <a href="https://tickmark-gules.vercel.app" target="_blank" rel="noopener noreferrer">Open the app</a>
+          <a href="https://tickmark-gules.vercel.app/methodology" target="_blank" rel="noopener noreferrer">Read the method</a>
+          <a href="https://github.com/yuzonglinsam/tickmark" target="_blank" rel="noopener noreferrer">View the source</a>
+        </p>
       </div>
+
+      <figure class="check" id="check" data-state="checked">
+        <figcaption>A claim check on Coca-Cola, FY2025</figcaption>
+        <div class="check-draft">
+          <p class="check-label">AI draft</p>
+          <p class="sentence">Net leverage sits below the sector median.</p>
+        </div>
+        <dl class="check-figures">
+          <div><dt>Coca-Cola net debt / EBITDA</dt><dd>2.38x</dd></div>
+          <div><dt>Sector median</dt><dd>2.34x</dd></div>
+        </dl>
+        <p class="verdict"><svg class="cross" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4 L20 20 M20 4 L4 20"/></svg><span>Above, not below. The sentence is withheld.</span></p>
+        <button class="check-button" type="button" aria-controls="check" hidden>Run the check</button>
+      </figure>
     </section>
 
-    <section class="section about-section" id="about" aria-labelledby="about-title">
-      <div class="container about-grid">
-        <div><p class="section-index">02 / ABOUT</p><h2 id="about-title">Curiosity, with<br> <em>a paper trail.</em></h2></div>
-        <div class="about-copy">
-          <p>I study Accounting and Data Analytics at the University of Hong Kong. My audit internship at BDO China Shu Lun Pan CPAs involved audit testing, bank reconciliation and reporting. As a research assistant at HKU Business School, I used SEC EDGAR filings and Python-assisted workflows to prepare structured data for M&amp;A research.</p>
-          <p>Those experiences shape what I build: financial analysis that lets someone trace a figure, examine an assumption and question a conclusion.</p>
-          <div class="about-details"><span>BASED IN HONG KONG</span><span>ACCOUNTING · DATA · RESEARCH</span></div>
+    <section class="background wrap" id="background" aria-labelledby="bg-title">
+      <h2 id="bg-title">Where the habit comes from</h2>
+      <div class="bg-grid">
+        <div class="bg-text">
+          <p>Audit work taught me to ask where a number came from. Building tools taught me how much time it saves when the answer is already attached.</p>
+          <p>I now look for work where finance, data and AI meet: automating routine analysis, checking what AI produces, and helping teams trust the result.</p>
+          <p class="zh" lang="zh-Hant">讓數據與判斷有據可循。</p>
         </div>
+        <ol class="roles">
+          <li><strong>Intern, BDO China Shu Lun Pan</strong><span>Cash and bank audit working papers, reconciliations and cut-off testing. Wrote the Python automation above.</span></li>
+          <li><strong>Research assistant, HKU Business School</strong><span>Collected and processed SEC EDGAR filings with Python for M&amp;A research.</span></li>
+          <li><strong>Treasurer, Lap-Chee College Rotaract</strong><span>Budgeting and expense control for a student organisation.</span></li>
+        </ol>
       </div>
     </section>
 
-    <section class="contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-grid">
-        <div><p class="section-index">03 / CONNECT</p><h2 id="contact-title">Let's compare <em>notes.</em></h2><p>Interested in financial research, useful tools, or the thinking behind a project? Find me on GitHub or <a href="https://www.linkedin.com/in/yuzonglin" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p></div>
-        <a class="contact-button" href="https://github.com/yuzonglinsam" target="_blank" rel="noopener noreferrer">Visit my GitHub <span aria-hidden="true">↗</span></a>
-      </div>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Let's talk</h2>
+      <p>I'm open to 2027 internships and placements in Hong Kong. The quickest way to reach me is LinkedIn; my code is on GitHub.</p>
+      <p class="links">
+        <a href="https://www.linkedin.com/in/yuzonglin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/yuzonglinsam" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </p>
     </section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Sam (Zonglin) Yu · 余宗霖</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <footer class="site-footer"><div class="wrap footer-inner"><span>© 2026 Sam Yu <span lang="zh-Hant">余宗霖</span></span><a href="#top">Back to top</a></div></footer>
+
+  <script>
+    (function () {
+      var fig = document.getElementById('check');
+      var btn = fig && fig.querySelector('.check-button');
+      if (!btn) return;
+      btn.hidden = false;
+      function set(state) {
+        fig.setAttribute('data-state', state);
+        btn.textContent = state === 'checked' ? 'Show the draft again' : 'Run the check';
+        btn.setAttribute('aria-expanded', state === 'checked');
+      }
+      set('draft');
+      btn.addEventListener('click', function () {
+        set(fig.getAttribute('data-state') === 'draft' ? 'checked' : 'draft');
+      });
+    })();
+  </script>
 </body>
 </html>
